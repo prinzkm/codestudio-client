@@ -21,11 +21,19 @@ module.exports = {
             use: 'ts-loader',
             exclude: /node_modules/
         },
-        { test: /\.css$/i, use: ['style-loader', 'css-loader'], exclude: /node_modules/ }
+        {
+          test: /\.scss$/i,
+          use: [
+            "style-loader",
+            "css-loader",
+            'sass-loader'
+          ],
+          exclude: /node_modules/,
+        }
       ],
     },
     resolve: {
-      extensions: ['.tsx', '.ts', '.js'],
+      extensions: ['.tsx', '.ts', '.js',  ],
     },
     devServer: { compress: true, port: 4000 },
   // Default mode for Webpack is production.

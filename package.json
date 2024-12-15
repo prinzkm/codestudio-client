@@ -3,8 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "mobx": "^6.13.5",
+    "mobx-react": "^9.2.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "satcheljs": "^4.3.1"
   },
   "scripts": {
     "start": "webpack serve --mode development",
@@ -31,19 +35,22 @@
     ]
   },
   "devDependencies": {
+    "@testing-library/react": "^16.1.0",
     "@types/react": "^19.0.1",
     "@types/react-dom": "^19.0.2",
     "@types/testing-library__react": "^10.2.0",
-    "@testing-library/react": "^16.1.0",
     "babel-loader": "^9.2.1",
+    "css-loader": "^7.1.2",
+    "css-modules-typescript-loader": "^4.0.1",
     "prettier": "^3.4.2",
+    "react-scripts": "5.0.1",
+    "sass": "^1.83.0",
+    "sass-loader": "^16.0.4",
+    "style-loader": "^4.0.0",
     "ts-loader": "^9.5.1",
     "web-vitals": "^4.2.4",
     "webpack": "^5.97.1",
     "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.2.0",
-    "react-scripts": "5.0.1",
-    "style-loader": "^4.0.0",
-    "css-loader": "^7.1.2"
+    "webpack-dev-server": "^5.2.0"
   }
 }
