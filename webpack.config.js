@@ -27,7 +27,7 @@ module.exports = {
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
     },
-    devServer: {  static: [ { directory: path.join(__dirname, 'public'), publicPath: '/', }, { directory: path.join(__dirname, 'dist'), publicPath: '/dist', }, ], compress: true, port: 4000 },
+    devServer: { compress: true, port: 4000 },
   // Default mode for Webpack is production.
   // Depending on mode Webpack will apply different things
   // on the final bundle. For now, we don't need production's JavaScript 
